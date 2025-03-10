@@ -148,7 +148,7 @@ Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("10. feladat");
 Console.ResetColor();
 
-torpek.Sort((a, b) => b.TTI().CompareTo(a.TTI())); // Nagyobb TTI előrébb
+torpek.Sort((a, b) => b.TTI().CompareTo(a.TTI()));
 Console.WriteLine("A 3 legnagyobb TTI-vel rendelkező törpe:");
 for (int i = 0; i < Math.Min(3, torpek.Count); i++)
 {
