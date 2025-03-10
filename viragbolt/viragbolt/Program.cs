@@ -36,6 +36,9 @@ Console.WriteLine($"Átlagosan {Virag.AtlagAr(viragok):F2} Ft-ba kerül egy szá
 #endregion
 
 #region 4.fel
+Console.ForegroundColor = ConsoleColor.Red;
+Console.WriteLine("4. feladat");
+Console.ResetColor();
 var legdragabb = Virag.Legdragabb(viragok);
 
 if (legdragabb != null)
@@ -52,7 +55,7 @@ else
 Console.ForegroundColor = ConsoleColor.Red;
 Console.WriteLine("5. feladat");
 Console.ResetColor();
-Console.WriteLine($"Legalább 1000 Ft-os virágok száma: {Virag.LegalabbEzerForintos(viragok)}");
+Console.WriteLine($"{Virag.LegalabbEzerForintos(viragok)}");
 #endregion
 
 #region 6.fel
